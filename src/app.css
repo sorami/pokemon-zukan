@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	font-family: 'DotGothic16', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a {
+	@apply text-blue-500 underline;
+	@apply hover:text-blue-700 hover:no-underline;
+}

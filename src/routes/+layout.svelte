@@ -2,8 +2,16 @@
 	import '../app.css';
 </script>
 
-<header class="text-red-400 text-3xl font-bold">ヘッダー</header>
+<svelte:head>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" />
+</svelte:head>
 
-<slot></slot>
+<div class="flex flex-col my-10 justify-center items-center">
+	<header class="max-w-3xl font-bold text-2xl mb-10">
+		<a href="/">ポケモンずかん</a>
+	</header>
 
-<footer>Made with Svelte</footer>
+	<slot></slot>
+</div>
